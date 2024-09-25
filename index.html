@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Halo Memory</title>
+    <link rel="stylesheet" href="./D4JS4.CSS">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Jacquard+12&family=Jersey+10+Charted&family=Jersey+15&family=Jersey+25+Charted&family=Oswald:wght@200..700&family=Reddit+Sans+Condensed:wght@200..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header class="header text-white d-flex justify-content-center">
+        <div class="header__div d-flex justify-content-evenly align-items-center fs-4 w-100">
+            <p class="fs-1">H A L O</p>
+            <p class="fs-1" id="status" >Combat Evolved</p>
+        </div>
+    </header>
+
+    <main class="main bg-danger d-flex justify-content-center">
+
+        <section class="main__section--1">
+
+            <img src="./imgs/HaloRing.jpg" alt="">
+
+            <article class="main__section--1__article--1 d-flex justify-content-center align-items-center">
+                <img src="./imgs/logo.jpg" alt="">
+            </article>
+
+            <article
+                class="main__section--1__article--2 d-flex flex-column align-content-center justify-content-around fs-3">
+
+                <section class="main__section--1__article--2__section--1 
+                bg-light d-flex flex-column justify-content-evenly align-items-center">
+                    <p class="z2" id="welcomeText"></p>
+                    <input type="text" id="namePlayer" class="z2" placeholder="Ingresa tu nombre">
+                    <input type="email" id="emailPlayer" class="z2" placeholder="Ingresa tu e-mail">
+                    <button onmouseover="soundOnMouseOver()" class="btnn mt-3 z2" id="loginPlayer" onclick="validateUser(namePlayer.value, emailPlayer.value)">Ingresar</button>
+                    <button onmouseover="soundOnMouseOver()" class="btnn z2" id="signinPlayer" onclick="User.addUser()">Registrarse</button>
+                </section>
+                <section class="main__section--1__article--2__section--2 
+                bg-light d-flex justify-content-center align-items-center">
+                    <button onmouseover="soundOnMouseOver()" id="btnPlay" class="z2" onclick="play()">Jugar</button>
+                    <button onmouseover="soundOnMouseOver()" id="btnOut" class="z2" onclick="logOut()">Salir</button>
+                </section>
+                <section class="main__section--1__article--2__section--3 
+                bg-light d-flex flex-column justify-content-around align-items-center">
+                    <p id="successes" class="z2">Aciertos:0</p>
+                    <p id="time" class="z2">Tiempo:0</p>
+                    <p id="record" class="z2">Tiempo record:0</p>
+                </section>
+            </article>
+        </section>
+
+        <section class="main__section--2 d-flex flex-wrap justify-content-around pt-2 container-fluid">
+            <article class="art">
+                <img class="initialCards" src="./imgs/InitialCards.jpg" alt="" style="opacity: 1; z-index: 5; ">
+                <div class="newCards" id="card1">
+
+                </div>
+            </article>
+            <article class="art">
+                <img class="initialCards" src="./imgs/InitialCards.jpg" alt="" style="opacity: 1;">
+                <div class="newCards" id="card2">
+
+                </div>
+            </article>
+            <article class="art">
+                <img class="initialCards" src="./imgs/InitialCards.jpg" alt="" style="opacity: 1;">
+                <div class="newCards" id="card3">
+
+                </div>
+            </article>
+            <article class="art">
+                <img class="initialCards" src="./imgs/InitialCards.jpg" alt="" style="opacity: 1;">
+                <div class="newCards" id="card4">
+
+                </div>
+            </article>
+            <article class="art">
+                <img class="initialCards" src="./imgs/InitialCards.jpg" alt="" style="opacity: 1;">
+                <div class="newCards" id="card5">
+
+                </div>
+            </article>
+            <article class="art">
+                <img class="initialCards" src="./imgs/InitialCards.jpg" alt="" style="opacity: 1;">
+                <div class="newCards" id="card6">
+
+                </div>
+            </article>
+            <article class="art">
+                <img class="initialCards" src="./imgs/InitialCards.jpg" alt="" style="opacity: 1;">
+                <div class="newCards" id="card7">
+
+                </div>
+            </article>
+            <article class="art">
+                <img class="initialCards" src="./imgs/InitialCards.jpg" alt="" style="opacity: 1;">
+                <div class="newCards" id="card8">
+
+                </div>
+            </article>
+            <article class="art">
+                <img class="initialCards" src="./imgs/InitialCards.jpg" alt="" style="opacity: 1;">
+                <div class="newCards" id="card9">
+
+                </div>
+            </article>
+            <article class="art">
+                <img class="initialCards" src="./imgs/InitialCards.jpg" alt="" style="opacity: 1;">
+                <div class="newCards" id="card10">
+
+                </div>
+            </article>
+            <article class="art">
+                <img class="initialCards" src="./imgs/InitialCards.jpg" alt="" style="opacity: 1;">
+                <div class="newCards" id="card11">
+
+                </div>
+            </article>
+            <article class="art">
+                <img class="initialCards" src="./imgs/InitialCards.jpg" alt="" style="opacity: 1;">
+                <div class="newCards" id="card12">
+
+                </div>
+            </article>
+            <article class="art">
+                <img class="initialCards" src="./imgs/InitialCards.jpg" alt="" style="opacity: 1;">
+                <div class="newCards" id="card13">
+
+                </div>
+            </article>
+            <article class="art">
+                <img class="initialCards" src="./imgs/InitialCards.jpg" alt="" style="opacity: 1;">
+                <div class="newCards" id="card14">
+
+                </div>
+            </article>
+            <article class="art">
+                <img class="initialCards" src="./imgs/InitialCards.jpg" alt="" style="opacity: 1;">
+                <div class="newCards" id="card15">
+
+                </div>
+            </article>
+            <article class="art">
+                <img class="initialCards" src="./imgs/InitialCards.jpg" alt="" style="opacity: 1;">
+                <div class="newCards" id="card16">
+
+                </div>
+            </article>
+        </section>
+    </main>
+    <footer></footer>
+
+    <script src="./D4JS4.JS"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

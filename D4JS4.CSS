@@ -1,0 +1,166 @@
+* {
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+    font-family: "Jersey 15", sans-serif;
+    margin: 0;
+}
+
+.z2 {
+    z-index: 2;
+    margin-left: 2vh;
+}
+
+/* Header */
+.header {
+    height: 10vh;
+    background-color: #000000;
+}
+
+.main {
+    height: 90vh;
+}
+
+.main__section--1 {
+    width: 50%;
+    /* font-weight: bold; */
+    color: white !important;
+    background-color: #000000;
+}
+
+.main__section--1>img {
+    position: absolute;
+    height: 75vh;
+    width: 33.5%;
+    top: 25%;
+    opacity: 0.3;
+}
+
+.main__section--1__article--1 {
+    height: 20vh;
+    background-color: #000000;
+}
+
+.main__section--1__article--1 img {
+    height: 80%;
+    width: 80%;
+}
+
+.main__section--1__article--2 {
+    height: 70vh;
+}
+
+.main__section--1__article--2 section {
+    height: 32%;
+    background-color: #000000 !important;
+}
+
+#namePlayer {
+    border-radius: 20px;
+    text-align: center;
+}
+
+#emailPlayer {
+    border-radius: 20px;
+    text-align: center;
+}
+
+.btnn {
+    border-radius: 20px;
+}
+
+#btnPlay {
+    border-radius: 20px;
+    display: none;
+}
+
+#btnOut {
+    border-radius: 20px;
+    display: none;
+}
+
+.main__section--2 {
+    width: 50%;
+    background-color: #000000;
+}
+
+.main__section--2 article {
+    height: 24%;
+    width: 24%;
+    border: solid rgba(255, 255, 255, 0.54) 2px;
+    border-radius: 20px;
+    transition-duration: 2seg;
+}
+
+.main__section--2 article>img {
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+    /* display: none; */
+}
+
+.art {
+    transition-duration: 0.10s;
+    scale: 0.9;
+}
+
+.art:hover {
+    scale: 1;
+}
+
+.newCards {
+    height: 100%;
+    width: 100%;
+    /* background-color: red; */
+    border-radius: 20px;
+    position: relative;
+    bottom: 100%;
+    /* z-index: 3; */
+}
+
+.newCards>img {
+    /* position: absolute; */
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+}
+
+.main__section--1__article--2__section--3>p {
+    display: none;
+}
+
+@media (max-width: 1000px) {
+    .header {
+        position: fixed;
+        width: 100%;
+    }
+
+    .main {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .main__section--1 {
+        width: 100%;
+        height: 55%;
+    }
+
+    .main__section--1>img {
+        display: none;
+    }
+
+    .main__section--1__article--1>img {
+        margin-top: 12%;
+    }
+
+    .main__section--1__article--2 {
+        height: auto;
+    }
+
+    .main__section--2{
+        height: 56vh;
+    }
+
+    .main__section--2 article {
+        width: 25%;
+        height: 25%;
+    }
+}
